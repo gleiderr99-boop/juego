@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Shooter 3D Prototipo</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #000; }
+        #crosshair { 
+            position: absolute; top: 50%; left: 50%; 
+            width: 20px; height: 20px; border: 2px solid white; 
+            border-radius: 50%; transform: translate(-50%, -50%); 
+        }
+    </style>
+</head>
+<body>
+    <div id="crosshair"></div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
